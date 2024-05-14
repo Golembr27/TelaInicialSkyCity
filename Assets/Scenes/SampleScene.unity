@@ -682,7 +682,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 451417064}
         m_TargetAssemblyTypeName: AtivarObejcto, Assembly-CSharp
-        m_MethodName: ApertarBotao
+        m_MethodName: CliqueDeBotao
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -742,8 +742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50a28213adbfdbc44bf8e7d491b9c18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ativar: {fileID: 0}
-  podeApertar: 0
+  menu: {fileID: 1389409294}
+  numero: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1329,7 @@ GameObject:
   - component: {fileID: 895529104}
   - component: {fileID: 895529103}
   - component: {fileID: 895529102}
+  - component: {fileID: 895529105}
   m_Layer: 5
   m_Name: Enrico
   m_TagString: Untagged
@@ -1399,7 +1400,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 895529103}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 895529105}
+        m_TargetAssemblyTypeName: AtivarDoisObejctos, Assembly-CSharp
+        m_MethodName: CliqueDeBotao1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &895529103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,6 +1451,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895529100}
   m_CullTransparentMesh: 1
+--- !u!114 &895529105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895529100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e974b75f579358e449d6464c3ff52d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu2: {fileID: 1658594576}
+  menu: {fileID: 1111813159}
+  numero: 0
+  numero2: 0
 --- !u!1 &923195002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1111813160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2419,7 +2448,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1377897450}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 895529105}
+        m_TargetAssemblyTypeName: AtivarDoisObejctos, Assembly-CSharp
+        m_MethodName: CliqueDeBotao2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1377897450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2473,7 +2514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1389409295
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2634,7 +2675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1658594577
 RectTransform:
   m_ObjectHideFlags: 0

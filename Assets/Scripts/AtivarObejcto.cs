@@ -4,28 +4,24 @@ using UnityEngine;
 
 public class AtivarObejcto : MonoBehaviour
 {
-    public GameObject Ativar;
-    public int podeApertar = 0;
+    public GameObject menu;
+    public int numero;
 
     private void Start()
     {
-        Ativar.SetActive(false);
+        menu.SetActive(false);
+        numero = 1;
     }
-
-    public void ApertarBotao()
+    public void CliqueDeBotao()
     {
-        
-        podeApertar = 1;
-        Debug.Log($"{podeApertar}");
-        if (podeApertar == 1)
+        if (numero == 1)
         {
-            Ativar.SetActive(true);
-            podeApertar = 0;
-        }
-        if (podeApertar == 0)
+            menu.SetActive(true);
+            numero = numero + 1;
+        } else if (numero == 2)
         {
-            Ativar.SetActive(false);
+            menu.SetActive(false);
+            numero = 1;
         }
-        
     }
-}
+}   
